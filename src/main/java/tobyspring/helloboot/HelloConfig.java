@@ -1,10 +1,7 @@
-package tobyspring.config;
+package tobyspring.helloboot;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import tobyspring.helloboot.HelloDecorator;
-import tobyspring.helloboot.HelloService;
-import tobyspring.helloboot.SimpleHelloService;
 
 @Configuration
 public class HelloConfig {

@@ -1,4 +1,0 @@
-tobyspring.config.autoconfig.TomcatWebServerConfig
-tobyspring.config.autoconfig.JettyWebServerConfig
-tobyspring.config.autoconfig.DispatcherServletConfig
-tobyspring.config.HelloConfig

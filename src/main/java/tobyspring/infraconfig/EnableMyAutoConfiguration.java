@@ -1,4 +1,4 @@
-package tobyspring.config;
+package tobyspring.infraconfig;
 
 import org.springframework.context.annotation.Import;
 

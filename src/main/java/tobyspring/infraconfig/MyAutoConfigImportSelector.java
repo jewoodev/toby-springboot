@@ -1,4 +1,4 @@
-package tobyspring.config;
+package tobyspring.infraconfig;
 
 import org.springframework.boot.context.annotation.ImportCandidates;
 import org.springframework.context.annotation.DeferredImportSelector;

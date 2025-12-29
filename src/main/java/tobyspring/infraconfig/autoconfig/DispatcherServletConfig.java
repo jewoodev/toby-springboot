@@ -1,8 +1,8 @@
-package tobyspring.config.autoconfig;
+package tobyspring.infraconfig.autoconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.DispatcherServlet;
-import tobyspring.config.MyAutoConfiguration;
+import tobyspring.infraconfig.MyAutoConfiguration;
 
 @MyAutoConfiguration
 public class DispatcherServletConfig {
