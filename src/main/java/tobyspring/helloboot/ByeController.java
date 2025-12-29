@@ -1,7 +1,5 @@
 package tobyspring.helloboot;
 
-import java.util.Objects;
-
 public class ByeController {
     private final ByeService byeService;
 

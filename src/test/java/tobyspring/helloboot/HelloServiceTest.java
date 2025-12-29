@@ -12,5 +12,14 @@ class HelloServiceTest {
         String ret = helloService.sayHello("Spring");
         assertThat(ret).isEqualTo("Hello Spring");
     }
+
+    @Test
+    void helloDecorator() {
+        var decorator = new HelloDecorator(name -> name);
+
+        String ret = decorator.sayHello("Spring");
+
+        assertThat(ret).isEqualTo("* Spring *");
+    }
 }
 
