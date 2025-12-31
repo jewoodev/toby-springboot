@@ -16,9 +16,4 @@ class DataSourceTest {
         var con = dataSource.getConnection();
         con.close();
     }
-
-    @Test
-    void hikari() {
-
-    }
 }
