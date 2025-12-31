@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration(proxyBeanMethods = false)
 public class HelloConfig {
     @Bean
-    public HelloService helloService() {
-        return new HelloDecorator(new SimpleHelloService());
+    public HelloService helloService(HelloRepository helloRepository) {
+        return new HelloDecorator(new SimpleHelloService(helloRepository));
     }
 }

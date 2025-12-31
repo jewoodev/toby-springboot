@@ -20,11 +20,23 @@ import static org.assertj.core.api.Assertions.assertThat;
 class HelloServiceTest {
     @FastUnitTest
     void simpleHelloService() {
-        var helloService = new SimpleHelloService();
+        var helloService = new SimpleHelloService(helloRepositoryStub);
 
         String ret = helloService.sayHello("Spring");
         assertThat(ret).isEqualTo("Hello Spring");
     }
+
+    private static HelloRepository helloRepositoryStub = new HelloRepository() {
+        @Override
+        public Hello findHello(String name) {
+            return null;
+        }
+
+        @Override
+        public int increaseCount(String name) {
+            return 0;
+        }
+    };
 
     @UnitTest
     void helloDecorator() {
