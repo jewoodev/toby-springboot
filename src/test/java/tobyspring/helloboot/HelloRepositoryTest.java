@@ -2,13 +2,16 @@ package tobyspring.helloboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-@HellobootTest
+@Transactional
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 class HelloRepositoryTest {
     @Autowired
     private HelloRepository helloRepository;
